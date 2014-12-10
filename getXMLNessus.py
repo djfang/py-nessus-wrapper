@@ -1,4 +1,5 @@
 # Script to Download Nessus Formatted XML via Nessus API
+# Dependent: https://github.com/metaevolution/py-nessus
 
 from nessus import api
 import util
