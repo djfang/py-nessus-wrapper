@@ -2,8 +2,7 @@
 # Dependent: https://github.com/metaevolution/py-nessus
 
 from nessus import api
-import util
-import pprint
+from nessus import util
 import sys
 import os
 
@@ -83,7 +82,7 @@ if (totalCMDArguments == SCRIPT_FIXED_ARGUMENTS):
                 print "Done... \n"
 
 else:
-    print "Please check your arguments. Received " + totalCMDArguments \
-        + " arguments, requires: " + SCRIPT_FIXED_ARGUMENTS \
+    print "Please check your arguments. Received " + str(totalCMDArguments) \
+        + " arguments, requires: " + str(SCRIPT_FIXED_ARGUMENTS) \
         + " \n Syntax: getXMLNessus.py <Nessus URL> <Nessus User> <Nessus Password> <Output Directory> <Verify Directory>"
 
